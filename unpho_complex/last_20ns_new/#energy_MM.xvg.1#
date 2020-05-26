@@ -1,0 +1,32 @@
+# This file was created Fri Sep 20 11:33:28 2019
+# Created by:
+#                   :-) GROMACS - g_mmpbsa, VERSION 5.1.2 (-:
+# 
+# Executable:   /mnt/data1/users/batool/batool/MD/unmodified_complex/last_50ns/last_5ns/adjusted_script/last_20ns/./g_mmpbsa
+# Data prefix:  /home/rajendra/software/gromacs_install/gmx512_static_woTNG
+# Command line:
+#   g_mmpbsa -f md_fit1.xtc -s md_400ns.tpr -n index.ndx -pdie 2 -decomp
+# g_mmpbsa is part of G R O M A C S:
+#
+# Groningen Machine for Chemical Simulation
+#
+@    title "Vacuum MM Energy"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Energy (kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "chB VdW Energy"
+@ s1 legend "chB Elec. Energy"
+@ s2 legend "chA VdW Energy"
+@ s3 legend "chA Elec. Energy"
+@ s4 legend "chB-chA VdW Energy"
+@ s5 legend "chB-chA Elec. Energy"
+@ s6 legend "chB-chA Total Energy"
+     399980.000          0.000          0.000          0.000          0.000      -1425.301      -2779.251      -4204.552
+     399990.000          0.000          0.000          0.000          0.000      -1374.264      -2979.408      -4353.671
+     400000.000          0.000          0.000          0.000          0.000      -1394.080      -2900.115      -4294.195

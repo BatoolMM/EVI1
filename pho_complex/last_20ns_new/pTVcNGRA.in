@@ -1,0 +1,51 @@
+read
+    mol pqr pTVcNGRA.pqr
+end
+
+elec name mol1
+    mg-auto
+    dime  161 161 161
+    cglen 116.775 107.025 112.740
+    fglen 82.850 76.350 80.160
+    cgcent 63.435 70.435 68.910
+    fgcent 63.435 70.435 68.910
+    mol 1
+    lpbe
+    bcfl mdh
+    ion 1 0.15 0.95
+    ion -1 0.15 1.81
+    pdie 2
+    sdie 80
+    srfm smol
+    chgm spl4
+    sdens 10
+    srad 1.4
+    swin 0.3
+    temp 300
+    calcenergy comps
+end
+
+elec name mol2
+    mg-auto
+    dime  161 161 161
+    cglen 116.775 107.025 112.740
+    fglen 82.850 76.350 80.160
+    cgcent 63.435 70.435 68.910
+    fgcent 63.435 70.435 68.910
+    mol 1
+    lpbe
+    bcfl mdh
+    ion 1 0.15 0.95
+    ion -1 0.15 1.81
+    pdie 2
+    sdie 1
+    srfm smol
+    chgm spl4
+    sdens 10
+    srad 1.4
+    swin 0.3
+    temp 300
+    calcenergy comps
+end
+print elecEnergy mol1 - mol2 end
+quit

@@ -1,0 +1,490 @@
+
+use source activate gpu to get the gpu virtual environment
+use source activate cpu to get the cpu virtual environment
+
+The gpu environment is needed for GPU versions of tensorflow, pytorch and other 
+Deep Learning frameworks.
+The cpu environment is mainly needed for the CPU version of tensorflow.
+
+                  :-) GROMACS - gmx trjconv, VERSION 5.1.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, VERSION 5.1.4
+Executable:   /opt/gridware/depots/e2b91392/el7/pkg/apps/gromacs/5.1.4/gcc-5.5.0+openmpi-1.10.7+fftw3_float-3.3.4+fftw3_double-3.3.4/bin/gmx
+Data prefix:  /opt/gridware/depots/e2b91392/el7/pkg/apps/gromacs/5.1.4/gcc-5.5.0+openmpi-1.10.7+fftw3_float-3.3.4+fftw3_double-3.3.4
+Command line:
+  gmx trjconv -f md_fit.xtc -s md_400ns.tpr -b 380000 -e 400000 -o md_fit1.xtc
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file md_400ns.tpr, VERSION 5.1.4 (single precision)
+Reading file md_400ns.tpr, VERSION 5.1.4 (single precision)
+Group     0 (         System) has 203907 elements
+Group     1 (        Protein) has  4963 elements
+Group     2 (      Protein-H) has  3898 elements
+Group     3 (        C-alpha) has   506 elements
+Group     4 (       Backbone) has  1518 elements
+Group     5 (      MainChain) has  2026 elements
+Group     6 (   MainChain+Cb) has  2498 elements
+Group     7 (    MainChain+H) has  2507 elements
+Group     8 (      SideChain) has  2456 elements
+Group     9 (    SideChain-H) has  1872 elements
+Group    10 (    Prot-Masses) has  4963 elements
+Group    11 (    non-Protein) has 198944 elements
+Group    12 (          Water) has 198942 elements
+Group    13 (            SOL) has 198942 elements
+Group    14 (      non-Water) has  4965 elements
+Group    15 (            Ion) has     2 elements
+Group    16 (             NA) has     2 elements
+Group    17 ( Water_and_ions) has 198944 elements
+Select a group: Reading frame       0 time    0.000   Reading frame       0 time 380000.000   
+Precision of md_fit.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+ ->  frame      0 time 380000.000      Reading frame       1 time 380010.000    ->  frame      1 time 380010.000      Reading frame       2 time 380020.000    ->  frame      2 time 380020.000      Reading frame       3 time 380030.000    ->  frame      3 time 380030.000      Reading frame       4 time 380040.000    ->  frame      4 time 380040.000      Reading frame       5 time 380050.000    ->  frame      5 time 380050.000      Reading frame       6 time 380060.000    ->  frame      6 time 380060.000      Reading frame       7 time 380070.000    ->  frame      7 time 380070.000      Reading frame       8 time 380080.000    ->  frame      8 time 380080.000      Reading frame       9 time 380090.000    ->  frame      9 time 380090.000      Reading frame      10 time 380100.000    ->  frame     10 time 380100.000      Reading frame      11 time 380110.000   Reading frame      12 time 380120.000   Reading frame      13 time 380130.000   Reading frame      14 time 380140.000   Reading frame      15 time 380150.000   Reading frame      16 time 380160.000   Reading frame      17 time 380170.000   Reading frame      18 time 380180.000   Reading frame      19 time 380190.000   Reading frame      20 time 380200.000    ->  frame     20 time 380200.000      Reading frame      30 time 380300.000    ->  frame     30 time 380300.000      Reading frame      40 time 380400.000    ->  frame     40 time 380400.000      Reading frame      50 time 380500.000    ->  frame     50 time 380500.000      Reading frame      60 time 380600.000    ->  frame     60 time 380600.000      Reading frame      70 time 380700.000    ->  frame     70 time 380700.000      Reading frame      80 time 380800.000    ->  frame     80 time 380800.000      Reading frame      90 time 380900.000    ->  frame     90 time 380900.000      Reading frame     100 time 381000.000    ->  frame    100 time 381000.000      Reading frame     110 time 381100.000    ->  frame    110 time 381100.000      Reading frame     120 time 381200.000    ->  frame    120 time 381200.000      Reading frame     130 time 381300.000    ->  frame    130 time 381300.000      Reading frame     140 time 381400.000    ->  frame    140 time 381400.000      Reading frame     150 time 381500.000    ->  frame    150 time 381500.000      Reading frame     160 time 381600.000    ->  frame    160 time 381600.000      Reading frame     170 time 381700.000    ->  frame    170 time 381700.000      Reading frame     180 time 381800.000    ->  frame    180 time 381800.000      Reading frame     190 time 381900.000    ->  frame    190 time 381900.000      Reading frame     200 time 382000.000    ->  frame    200 time 382000.000       ->  frame    210 time 382100.000       ->  frame    220 time 382200.000       ->  frame    230 time 382300.000       ->  frame    240 time 382400.000       ->  frame    250 time 382500.000       ->  frame    260 time 382600.000       ->  frame    270 time 382700.000       ->  frame    280 time 382800.000       ->  frame    290 time 382900.000      Reading frame     300 time 383000.000    ->  frame    300 time 383000.000       ->  frame    310 time 383100.000       ->  frame    320 time 383200.000       ->  frame    330 time 383300.000       ->  frame    340 time 383400.000       ->  frame    350 time 383500.000       ->  frame    360 time 383600.000       ->  frame    370 time 383700.000       ->  frame    380 time 383800.000       ->  frame    390 time 383900.000      Reading frame     400 time 384000.000    ->  frame    400 time 384000.000       ->  frame    410 time 384100.000       ->  frame    420 time 384200.000       ->  frame    430 time 384300.000       ->  frame    440 time 384400.000       ->  frame    450 time 384500.000       ->  frame    460 time 384600.000       ->  frame    470 time 384700.000       ->  frame    480 time 384800.000       ->  frame    490 time 384900.000      Reading frame     500 time 385000.000    ->  frame    500 time 385000.000       ->  frame    510 time 385100.000       ->  frame    520 time 385200.000       ->  frame    530 time 385300.000       ->  frame    540 time 385400.000       ->  frame    550 time 385500.000       ->  frame    560 time 385600.000       ->  frame    570 time 385700.000       ->  frame    580 time 385800.000       ->  frame    590 time 385900.000      Reading frame     600 time 386000.000    ->  frame    600 time 386000.000       ->  frame    610 time 386100.000       ->  frame    620 time 386200.000       ->  frame    630 time 386300.000       ->  frame    640 time 386400.000       ->  frame    650 time 386500.000       ->  frame    660 time 386600.000       ->  frame    670 time 386700.000       ->  frame    680 time 386800.000       ->  frame    690 time 386900.000      Reading frame     700 time 387000.000    ->  frame    700 time 387000.000       ->  frame    710 time 387100.000       ->  frame    720 time 387200.000       ->  frame    730 time 387300.000       ->  frame    740 time 387400.000       ->  frame    750 time 387500.000       ->  frame    760 time 387600.000       ->  frame    770 time 387700.000       ->  frame    780 time 387800.000       ->  frame    790 time 387900.000      Reading frame     800 time 388000.000    ->  frame    800 time 388000.000       ->  frame    810 time 388100.000       ->  frame    820 time 388200.000       ->  frame    830 time 388300.000       ->  frame    840 time 388400.000       ->  frame    850 time 388500.000       ->  frame    860 time 388600.000       ->  frame    870 time 388700.000       ->  frame    880 time 388800.000       ->  frame    890 time 388900.000      Reading frame     900 time 389000.000    ->  frame    900 time 389000.000       ->  frame    910 time 389100.000       ->  frame    920 time 389200.000       ->  frame    930 time 389300.000       ->  frame    940 time 389400.000       ->  frame    950 time 389500.000       ->  frame    960 time 389600.000       ->  frame    970 time 389700.000       ->  frame    980 time 389800.000       ->  frame    990 time 389900.000      Reading frame    1000 time 390000.000    ->  frame   1000 time 390000.000       ->  frame   1010 time 390100.000       ->  frame   1020 time 390200.000       ->  frame   1030 time 390300.000       ->  frame   1040 time 390400.000       ->  frame   1050 time 390500.000       ->  frame   1060 time 390600.000       ->  frame   1070 time 390700.000       ->  frame   1080 time 390800.000       ->  frame   1090 time 390900.000      Reading frame    1100 time 391000.000    ->  frame   1100 time 391000.000       ->  frame   1110 time 391100.000       ->  frame   1120 time 391200.000       ->  frame   1130 time 391300.000       ->  frame   1140 time 391400.000       ->  frame   1150 time 391500.000       ->  frame   1160 time 391600.000       ->  frame   1170 time 391700.000       ->  frame   1180 time 391800.000       ->  frame   1190 time 391900.000      Reading frame    1200 time 392000.000    ->  frame   1200 time 392000.000       ->  frame   1210 time 392100.000       ->  frame   1220 time 392200.000       ->  frame   1230 time 392300.000       ->  frame   1240 time 392400.000       ->  frame   1250 time 392500.000       ->  frame   1260 time 392600.000       ->  frame   1270 time 392700.000       ->  frame   1280 time 392800.000       ->  frame   1290 time 392900.000      Reading frame    1300 time 393000.000    ->  frame   1300 time 393000.000       ->  frame   1310 time 393100.000       ->  frame   1320 time 393200.000       ->  frame   1330 time 393300.000       ->  frame   1340 time 393400.000       ->  frame   1350 time 393500.000       ->  frame   1360 time 393600.000       ->  frame   1370 time 393700.000       ->  frame   1380 time 393800.000       ->  frame   1390 time 393900.000      Reading frame    1400 time 394000.000    ->  frame   1400 time 394000.000       ->  frame   1410 time 394100.000       ->  frame   1420 time 394200.000       ->  frame   1430 time 394300.000       ->  frame   1440 time 394400.000       ->  frame   1450 time 394500.000       ->  frame   1460 time 394600.000       ->  frame   1470 time 394700.000       ->  frame   1480 time 394800.000       ->  frame   1490 time 394900.000      Reading frame    1500 time 395000.000    ->  frame   1500 time 395000.000       ->  frame   1510 time 395100.000       ->  frame   1520 time 395200.000       ->  frame   1530 time 395300.000       ->  frame   1540 time 395400.000       ->  frame   1550 time 395500.000       ->  frame   1560 time 395600.000       ->  frame   1570 time 395700.000       ->  frame   1580 time 395800.000       ->  frame   1590 time 395900.000      Reading frame    1600 time 396000.000    ->  frame   1600 time 396000.000       ->  frame   1610 time 396100.000       ->  frame   1620 time 396200.000       ->  frame   1630 time 396300.000       ->  frame   1640 time 396400.000       ->  frame   1650 time 396500.000       ->  frame   1660 time 396600.000       ->  frame   1670 time 396700.000       ->  frame   1680 time 396800.000       ->  frame   1690 time 396900.000      Reading frame    1700 time 397000.000    ->  frame   1700 time 397000.000       ->  frame   1710 time 397100.000       ->  frame   1720 time 397200.000       ->  frame   1730 time 397300.000       ->  frame   1740 time 397400.000       ->  frame   1750 time 397500.000       ->  frame   1760 time 397600.000       ->  frame   1770 time 397700.000       ->  frame   1780 time 397800.000       ->  frame   1790 time 397900.000      Reading frame    1800 time 398000.000    ->  frame   1800 time 398000.000       ->  frame   1810 time 398100.000       ->  frame   1820 time 398200.000       ->  frame   1830 time 398300.000       ->  frame   1840 time 398400.000       ->  frame   1850 time 398500.000       ->  frame   1860 time 398600.000       ->  frame   1870 time 398700.000       ->  frame   1880 time 398800.000       ->  frame   1890 time 398900.000      Reading frame    1900 time 399000.000    ->  frame   1900 time 399000.000       ->  frame   1910 time 399100.000       ->  frame   1920 time 399200.000       ->  frame   1930 time 399300.000       ->  frame   1940 time 399400.000       ->  frame   1950 time 399500.000       ->  frame   1960 time 399600.000       ->  frame   1970 time 399700.000       ->  frame   1980 time 399800.000       ->  frame   1990 time 399900.000      Reading frame    2000 time 400000.000    ->  frame   2000 time 400000.000      Last frame       2000 time 400000.000   
+
+
+gcq#397: "And after some more talk we agreed that the wisdom of rats had been grossly overrated, being in fact no greater than that of men" (Joseph Conrad)
+
+Select group for output
+Selected 0: 'System'
+                   :-) GROMACS - g_mmpbsa, VERSION 5.1.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      g_mmpbsa, VERSION 5.1.2
+Executable:   /mnt/data1/users/batool/batool/MD/unmodified_complex/last_50ns/last_5ns/adjusted_script/last_20ns_new/./g_mmpbsa
+Data prefix:  /home/rajendra/software/gromacs_install/gmx512_static_woTNG
+Command line:
+  g_mmpbsa -f md_fit1.xtc -s md_400ns.tpr -n index.ndx -pdie 2 -decomp
+
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+                                                                        
+               Authors: Rashmi Kumari and Andrew Lynn                   
+               Contribution: Rajendra Kumar                             
+                                                                        
+       Copyright (C) 2013 - 2016 Rashmi Kumari and Andrew Lynn          
+                                                                        
+g_mmpbsa is free software: you can redistribute it and/or modify        
+it under the terms of the GNU General Public License as published by    
+the Free Software Foundation, either version 3 of the License, or       
+(at your option) any later version.                                     
+                                                                        
+g_mmpbsa is distributed in the hope that it will be useful,             
+but WITHOUT ANY WARRANTY; without even the implied warranty of          
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           
+GNU General Public License for more details.                            
+                                                                        
+You should have received a copy of the GNU General Public License       
+along with g_mmpbsa.  If not, see <http://www.gnu.org/licenses/>.       
+                                                                        
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS     
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR   
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT    
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING    
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS      
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.            
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+Reading file md_400ns.tpr, VERSION 5.1.4 (single precision)
+Reading file md_400ns.tpr, VERSION 5.1.4 (single precision)
+Group     0 (         System) has 203907 elements
+Group     1 (        Protein) has  4963 elements
+Group     2 (      Protein-H) has  3898 elements
+Group     3 (        C-alpha) has   506 elements
+Group     4 (       Backbone) has  1518 elements
+Group     5 (      MainChain) has  2026 elements
+Group     6 (   MainChain+Cb) has  2498 elements
+Group     7 (    MainChain+H) has  2507 elements
+Group     8 (      SideChain) has  2456 elements
+Group     9 (    SideChain-H) has  1872 elements
+Group    10 (    Prot-Masses) has  4963 elements
+Group    11 (    non-Protein) has 198944 elements
+Group    12 (          Water) has 198942 elements
+Group    13 (            SOL) has 198942 elements
+Group    14 (      non-Water) has  4965 elements
+Group    15 (            Ion) has     2 elements
+Group    16 (             NA) has     2 elements
+Group    17 ( Water_and_ions) has 198944 elements
+Group    18 (            chA) has  3279 elements
+Group    19 (            chB) has  1684 elements
+Group    20 (  C-alpha_&_chA) has   333 elements
+Group    21 (  C-alpha_&_chB) has   173 elements
+Select a group: Group     0 (         System) has 203907 elements
+Group     1 (        Protein) has  4963 elements
+Group     2 (      Protein-H) has  3898 elements
+Group     3 (        C-alpha) has   506 elements
+Group     4 (       Backbone) has  1518 elements
+Group     5 (      MainChain) has  2026 elements
+Group     6 (   MainChain+Cb) has  2498 elements
+Group     7 (    MainChain+H) has  2507 elements
+Group     8 (      SideChain) has  2456 elements
+Group     9 (    SideChain-H) has  1872 elements
+Group    10 (    Prot-Masses) has  4963 elements
+Group    11 (    non-Protein) has 198944 elements
+Group    12 (          Water) has 198942 elements
+Group    13 (            SOL) has 198942 elements
+Group    14 (      non-Water) has  4965 elements
+Group    15 (            Ion) has     2 elements
+Group    16 (             NA) has     2 elements
+Group    17 ( Water_and_ions) has 198944 elements
+Group    18 (            chA) has  3279 elements
+Group    19 (            chB) has  1684 elements
+Group    20 (  C-alpha_&_chA) has   333 elements
+Group    21 (  C-alpha_&_chB) has   173 elements
+Select a group: Reading frame       0 time 380000.000   Reading frame       1 time 380010.000   Reading frame       2 time 380020.000   Reading frame       3 time 380030.000   Reading frame       4 time 380040.000   Reading frame       5 time 380050.000   Reading frame       6 time 380060.000   Reading frame       7 time 380070.000   Reading frame       8 time 380080.000   Reading frame       9 time 380090.000   Reading frame      10 time 380100.000   Reading frame      11 time 380110.000   Reading frame      12 time 380120.000   Reading frame      13 time 380130.000   Reading frame      14 time 380140.000   Reading frame      15 time 380150.000   Reading frame      16 time 380160.000   Reading frame      17 time 380170.000   Reading frame      18 time 380180.000   Reading frame      19 time 380190.000   Reading frame      20 time 380200.000   Reading frame      30 time 380300.000   Reading frame      40 time 380400.000   Reading frame      50 time 380500.000   Reading frame      60 time 380600.000   Reading frame      70 time 380700.000   Reading frame      80 time 380800.000   Reading frame      90 time 380900.000   Reading frame     100 time 381000.000   Reading frame     110 time 381100.000   Reading frame     120 time 381200.000   Reading frame     130 time 381300.000   Reading frame     140 time 381400.000   Reading frame     150 time 381500.000   Reading frame     160 time 381600.000   Reading frame     170 time 381700.000   Reading frame     180 time 381800.000   Reading frame     190 time 381900.000   Reading frame     200 time 382000.000   Reading frame     300 time 383000.000   Reading frame     400 time 384000.000   Reading frame     500 time 385000.000   Reading frame     600 time 386000.000   Reading frame     700 time 387000.000   Reading frame     800 time 388000.000   Reading frame     900 time 389000.000   Reading frame    1000 time 390000.000   Reading frame    1100 time 391000.000   Reading frame    1200 time 392000.000   Reading frame    1300 time 393000.000   Reading frame    1400 time 394000.000   Reading frame    1500 time 395000.000   Reading frame    1600 time 396000.000   Reading frame    1700 time 397000.000   Reading frame    1800 time 398000.000   Reading frame    1900 time 399000.000   Reading frame    2000 time 400000.000   Last frame       2000 time 400000.000   
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+
+-------- -------- ------------------- -------- --------
+S Pronk, S Páll, R Schulz, P Larsson, P Bjelkmar, R Apostolov, M R Shirts, J
+C Smith, P M Kasson, D van der Spoel, B Hess, and E Lindahl
+GROMACS 4.5: a high-throughput and highly parallel open source molecular
+simulation toolkit
+Bioinformatics 29 (2013) pp. 845-854
+-------- -------- ------------------- -------- --------
+
+-------- -------- ------------------- -------- --------
+g_mmpbsa—A GROMACS Tool for High-Throughput MM-PBSA Calculations.
+Kumari R. et al. (2014)
+J. Chem. Inf. Model., 54 (7), 1951–1962
+URL: http://pubs.acs.org/doi/abs/10.1021/ci500020m 
+-------- -------- ------------------- -------- --------
+
+-------- -------- --- Thank You --- -------- --------
+
+
+
+Thanks for using g_mmpbsa.
+
+
+Thanx for Using GROMACS - Have a Nice Day
+
+
+
+
+Enter the group number for Protein or first Protein or first group:
+Selected 19: 'chB'
+
+
+
+Enter the group number of Ligand or second Protein or second group:
+Selected 18: 'chA'
+                   :-) GROMACS - g_mmpbsa, VERSION 5.1.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      g_mmpbsa, VERSION 5.1.2
+Executable:   /mnt/data1/users/batool/batool/MD/unmodified_complex/last_50ns/last_5ns/adjusted_script/last_20ns_new/./g_mmpbsa
+Data prefix:  /home/rajendra/software/gromacs_install/gmx512_static_woTNG
+Command line:
+  g_mmpbsa -f md_fit1.xtc -s md_400ns.tpr -n index.ndx -i apolar_sasa.mdp -nomme -pbsa -decomp -apol sasa.xvg -apcon sasa_contrib.dat
+
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+                                                                        
+               Authors: Rashmi Kumari and Andrew Lynn                   
+               Contribution: Rajendra Kumar                             
+                                                                        
+       Copyright (C) 2013 - 2016 Rashmi Kumari and Andrew Lynn          
+                                                                        
+g_mmpbsa is free software: you can redistribute it and/or modify        
+it under the terms of the GNU General Public License as published by    
+the Free Software Foundation, either version 3 of the License, or       
+(at your option) any later version.                                     
+                                                                        
+g_mmpbsa is distributed in the hope that it will be useful,             
+but WITHOUT ANY WARRANTY; without even the implied warranty of          
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           
+GNU General Public License for more details.                            
+                                                                        
+You should have received a copy of the GNU General Public License       
+along with g_mmpbsa.  If not, see <http://www.gnu.org/licenses/>.       
+                                                                        
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS     
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR   
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT    
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING    
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS      
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.            
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+
+-------------------------------------------------------
+Program:     g_mmpbsa, VERSION 5.1.2
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -i
+    File 'apolar_sasa.mdp' does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                   :-) GROMACS - g_mmpbsa, VERSION 5.1.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      g_mmpbsa, VERSION 5.1.2
+Executable:   /mnt/data1/users/batool/batool/MD/unmodified_complex/last_50ns/last_5ns/adjusted_script/last_20ns_new/./g_mmpbsa
+Data prefix:  /home/rajendra/software/gromacs_install/gmx512_static_woTNG
+Command line:
+  g_mmpbsa -f md_fit1.xtc -s md_400ns.tpr -n index.ndx -i apolar_sav.mdp -nomme -pbsa -decomp -apol sav.xvg -apcon sav_contrib.dat
+
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+                                                                        
+               Authors: Rashmi Kumari and Andrew Lynn                   
+               Contribution: Rajendra Kumar                             
+                                                                        
+       Copyright (C) 2013 - 2016 Rashmi Kumari and Andrew Lynn          
+                                                                        
+g_mmpbsa is free software: you can redistribute it and/or modify        
+it under the terms of the GNU General Public License as published by    
+the Free Software Foundation, either version 3 of the License, or       
+(at your option) any later version.                                     
+                                                                        
+g_mmpbsa is distributed in the hope that it will be useful,             
+but WITHOUT ANY WARRANTY; without even the implied warranty of          
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           
+GNU General Public License for more details.                            
+                                                                        
+You should have received a copy of the GNU General Public License       
+along with g_mmpbsa.  If not, see <http://www.gnu.org/licenses/>.       
+                                                                        
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS     
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR   
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT    
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING    
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS      
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.            
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+
+-------------------------------------------------------
+Program:     g_mmpbsa, VERSION 5.1.2
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -i
+    File 'apolar_sav.mdp' does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                   :-) GROMACS - g_mmpbsa, VERSION 5.1.2 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      g_mmpbsa, VERSION 5.1.2
+Executable:   /mnt/data1/users/batool/batool/MD/unmodified_complex/last_50ns/last_5ns/adjusted_script/last_20ns_new/./g_mmpbsa
+Data prefix:  /home/rajendra/software/gromacs_install/gmx512_static_woTNG
+Command line:
+  g_mmpbsa -f md_fit1.xtc -s md_400ns.tpr -n index.ndx -i polar.mdp -nomme -pbsa -decomp
+
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+                                                                        
+               Authors: Rashmi Kumari and Andrew Lynn                   
+               Contribution: Rajendra Kumar                             
+                                                                        
+       Copyright (C) 2013 - 2016 Rashmi Kumari and Andrew Lynn          
+                                                                        
+g_mmpbsa is free software: you can redistribute it and/or modify        
+it under the terms of the GNU General Public License as published by    
+the Free Software Foundation, either version 3 of the License, or       
+(at your option) any later version.                                     
+                                                                        
+g_mmpbsa is distributed in the hope that it will be useful,             
+but WITHOUT ANY WARRANTY; without even the implied warranty of          
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           
+GNU General Public License for more details.                            
+                                                                        
+You should have received a copy of the GNU General Public License       
+along with g_mmpbsa.  If not, see <http://www.gnu.org/licenses/>.       
+                                                                        
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS     
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT     
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR   
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT    
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR  
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF  
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING    
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS      
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.            
+                                                                        
+                           :-)  g_mmpbsa (-:                            
+
+-------------------------------------------------------
+Program:     g_mmpbsa, VERSION 5.1.2
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 234)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -i
+    File 'polar.mdp' does not exist or is not accessible.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+
+ERROR: polar.xvg not found....
+
+usage: MmPbSaStat.py [-h] [-mt] [-mf metafile.dat] [-m energy_MM.xvg]
+                     [-p polar.xvg] [-a apolar.xvg] [-bs] [-nbs 500]
+                     [-of full_energy.dat] [-os summary_energy.dat]
+                     [-om meta_energy.dat]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -mt, --multiple       If given, calculate for multiple complexes. Need
+                        Metafile containing path of energy files
+  -mf metafile.dat, --metafile metafile.dat
+                        Metafile containing path to energy files of each
+                        complex in a row obtained from g_mmpbsa in following
+                        order: [MM file] [Polar file] [ Non-polar file]
+  -m energy_MM.xvg, --molmech energy_MM.xvg
+                        Vacuum Molecular Mechanics energy file obtained from
+                        g_mmpbsa
+  -p polar.xvg, --polar polar.xvg
+                        Polar solvation energy file obtained from g_mmpbsa
+  -a apolar.xvg, --apolar apolar.xvg
+                        Non-Polar solvation energy file obtained from g_mmpbsa
+  -bs, --bootstrap      If given, Enable Boot Strap analysis
+  -nbs 500, --nbstep 500
+                        Number of boot strap steps for average energy
+                        calculation
+  -of full_energy.dat, --outfr full_energy.dat
+                        Energy File: All energy components frame wise
+  -os summary_energy.dat, --outsum summary_energy.dat
+                        Final Energy File: Full Summary of energy components
+  -om meta_energy.dat, --outmeta meta_energy.dat
+                        Final Energy File for Multiple Complexes: Complex wise
+                        final binding nergy
