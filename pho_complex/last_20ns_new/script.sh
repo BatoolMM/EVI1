@@ -16,4 +16,5 @@ echo 23 22| ./g_mmpbsa -f md_fit1.xtc -s md_200ns.tpr -n index.ndx -i apolar_sas
 echo 23 22| ./g_mmpbsa -f md_fit1.xtc -s md_200ns.tpr -n index.ndx -i apolar_sav.mdp -nomme -pbsa -decomp -apol sav.xvg -apcon sav_contrib.dat
 echo 23 22| ./g_mmpbsa -f md_fit1.xtc -s md_200ns.tpr -n index.ndx -i polar.mdp -nomme -pbsa -decomp
 
+# sum up all the calaculations
 python3 MmPbSaStat.py -m energy_MM.xvg -p polar.xvg -a sasa.xvg
