@@ -7,6 +7,7 @@
 #SBATCH -t 3-00:00:00
 export OMP_NUM_THREADS=$SLURM_NTASKS
 
+#Load the modules in Brakla
 module load apps/anaconda3/5.2.0
 module load apps/gromacs/5.1.4/gcc-5.5.0+openmpi-1.10.7+fftw3_float-3.3.4+fftw3_double-3.3.4
 
